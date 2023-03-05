@@ -1,0 +1,45 @@
+package tp1;
+
+public class Bank {
+    private double argent;
+    private int armor;
+
+    public Bank(double argent, int armor) {
+        this.argent = argent;
+        this.armor = armor;
+    }
+
+    public int getArmor() {
+        return armor;
+    }
+
+    public double getArgent() {
+        return argent;
+    }
+    public void displayArgent() {
+        System.out.println(argent);
+    }
+    // On va toujours verifier si on assez d'argent avant d'utiliser la fonction enleveArgent
+    public void enleveArgent(double montant) {
+        argent -= montant;
+    }
+    public void ajouterArgent( double montant) {
+        argent += montant;
+    }
+    public void ajouterArmure( double nbArmor) {
+        armor += nbArmor;
+
+    }
+    public void enleveArmore(double nbArmor) {
+        armor -= nbArmor;
+    }
+    public void buyArmor(int number, int cost) {
+        int coutTotal = number * cost;
+        if (argent >= coutTotal) {
+            argent -= coutTotal;
+            armor += number;
+        } else {
+            System.out.println("Pas assez d'argent.");
+        }
+    }
+}
