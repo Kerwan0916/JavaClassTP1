@@ -24,8 +24,15 @@ public class Bank {
     public void enleveArgent(double montant) {
         argent -= montant;
     }
+    public void ajouterArgent( double montant) {
+        argent += montant;
+    }
+    public void ajouterArmure( double nbArmor) {
+        armor += nbArmor;
+
+    }
     public void enleveArmore(double montant) {
-        argent -= montant;
+        armor -= montant;
     }
     public void buyArmor(int number, int cost) {
         int coutTotal = number * cost;
