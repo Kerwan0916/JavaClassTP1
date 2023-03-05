@@ -5,18 +5,7 @@ public class Cat1 extends Hero {
 
 
     public Cat1(String name, double cost, int armor, double hp) {
-        super(name, cost, armor, hp);
-        this.category = category;
+        super(name, 1,cost, armor, hp);
     }
-
-    // Getters et setters
-    public int getCategory() {
-        return category;
-    }
-
-    public void setCategory(int category) {
-        this.category = category;
-    }
-
 }
 

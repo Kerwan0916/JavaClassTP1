@@ -8,7 +8,11 @@ public class inventory {
     public void addToList(Hero hero) {
         inventoryList.add(hero);
     }
+    public void removefromlist(Hero hero) {
+        inventoryList.remove((hero));
+    }
 
-
-
+    public ArrayList<Hero> getInventoryList() {
+        return inventoryList;
+    }
 }

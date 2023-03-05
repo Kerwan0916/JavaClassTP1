@@ -20,12 +20,12 @@ public class Bank {
     public void displayArgent() {
         System.out.println(argent);
     }
-    public void enleveArgent(int montant) {
-        if (argent >= montant) {
-            argent -= montant;
-        } else {
-            System.out.println("pas assez!");
-        }
+    // On va toujours verifie si on assez d'argent avant d'utilise la fonction enleveArgent
+    public void enleveArgent(double montant) {
+        argent -= montant;
+    }
+    public void enleveArmore(double montant) {
+        argent -= montant;
     }
     public void buyArmor(int number, int cost) {
         int coutTotal = number * cost;
